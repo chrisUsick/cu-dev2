@@ -169,17 +169,36 @@ a:after {
 	text-transform: uppercase;
 }
 
+section img {
+    float: right;
+    padding:10px;
+}
+
+.top-padding section {
+    position: relative;
+    /*top: -50px;*/
+}
+
+.top-padding {
+    padding-top: 81px;
+}
+
 /* Dark Grey Wrap */
-#dg {
+.dg {
 	background: #e0e0e0;
 	padding-top: 70px;
 	padding-bottom: 70px;
 	text-align: center;
 }
 
-#dg h4 {
+.dg h4 {
 	font-weight: 700;
 }
+
+.no-center {
+    text-align: left;
+}
+
 
 /* Light Grey */
 #lg {

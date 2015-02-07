@@ -40,10 +40,9 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li><a href="works.html">WORKS</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#about">ABOUT</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -67,53 +66,84 @@
 	</div><!-- headerwrap -->
 
 	<!-- catch phrase or something -->
-	<div class="container w">
+	<div class="container w" id="skills">
 		<div class="row centered">
+			<h4>SKILLS</h4>
 			<br><br>
-			<div class="col-lg-4">
-				<i class="fa fa-camera"></i>
-				<h4>Javascript</h4>
+			<div class="col-lg-3">
+				<i class="fa fa-server"></i>
+				<h4>Server-side Web Dev</h4>
 				<p></p>
 			</div><!-- col-lg-4 -->
 
-			<div class="col-lg-4">
+			<div class="col-lg-3">
+				<i class="fa fa-html5"></i>
+				<h4>Client-side Web Dev</h4>
+				<p></p>
+			</div>
+
+			<div class="col-lg-3">
 				<i class="fa fa-mobile"></i>
-				<h4></h4>
+				<h4>Cordova</h4>
 				<p></p>
 			</div><!-- col-lg-4 -->
 
+			<div class="col-lg-3">
+				<i class="fa fa-database"></i>
+				<h4>Databases</h4>
+				<p></p>
+			</div>
+
+		</div><!-- row -->
+
+		<div class="row centered"> 
 			<div class="col-lg-4">
 				<i class="fa fa-code"></i>
-				<h4></h4>
+				<h4>.NET Framework</h4>
 				<p></p>
 			</div><!-- col-lg-4 -->
-		</div><!-- row -->
+
+			<div class="col-lg-4">
+				<i class="fa fa-cloud-upload"></i>
+				<h4>AWS</h4>
+				<p></p>
+			</div>
+
+			<div class="col-lg-4">
+				<i class="fa fa-laptop"></i>
+				<h4>Linux Administration</h4>
+				<p></p>
+			</div>
+		</div>
+			
+
+			
 		<br>
 		<br>
 	</div><!-- container -->
 
 
 	<!-- PORTFOLIO SECTION -->
-	<div id="dg">
+	<div class="dg" id="work">
 		<div class="container">
 			<div class="row centered">
 				<h4>LATEST WORKS</h4>
 				<br>
 				<div class="col-lg-4">
 					<i class="fa fa-camera"></i>
-					<h4>Broadcaster</h4>
+					<h4><a href="#broadcaster">Broadcaster</a></h4>
 					<p>Seamless and simple video broadcasting from the browser.</p>
 				</div><!-- col-lg-4 -->
 
 				<div class="col-lg-4">
 					<i class="fa fa-mobile"></i>
-					<h4>Recipe Rappele</h4>
+					<h4><a href="#recipeRappele">Recipe Rappele</a></h4>
 					<p>A chrome extension to extract recipe data from a recipe site, store it for offline usage, and display it in a uncluttered view.</p>
 				</div><!-- col-lg-4 -->
 
 				<div class="col-lg-4">
 					<i class="fa fa-code"></i>
-					<h4>AA Factory</h4>
+					<h4><a href="#AAFactory">AA Factory</a></h4>
 					<p>An interactive coding app for creating and testing autonomous agents.</p>
 				</div><!-- col-lg-4 -->
 				
@@ -123,39 +153,76 @@
 
 
 	<!-- FEATURE SECTION -->
-	<div class="container wb">
+	<div class="container wb" id="about">
 		<div class="row centered">
 			<br><br>
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4>About Me</h4>
-				<p></p>
+				<p>
+	        I'm a self-directed web developer. I'm live in the Winnipeg area and am currently a student at Red River College. I am taking <a href="http://me.rrc.mb.ca/Catalogue/ProgramInfo.aspx?RegionCode=WPG&ProgCode=INTUF-CT">Business Information Technology</a>. In my free time I like to hang out with friends, read, cook and explore new technologies. I enjoy learning about entrepreneurship and innovation in the technology sector. 
+	      </p>
+	      <p>
+	        I have been programming for 4 years. My first languages I worked with here Python, Common Lisp and Haskell. Later I became interested in client-side web programming where I learned about many web related technologies. I started using Node.js 2 years ago. I have used it for a variety of different projects. I used the Express framework for the <a href="#broadcaster">Broadcaster</a> project. I also have experience using Node.js with web-sockets, databases (MongoDB, MySQL, PostgreSQL), template languages, and other frameworks. 
+	      </p>
 			<p><br/><br/></p>
 			</div>
 			<div class="col-lg-2"></div>
-			<div class="col-lg-10 col-lg-offset-1">
-				<img class="img-responsive" src="assets/img/munter.png" alt="">
-			</div>
+			
 		</div><!-- row -->
 	</div><!-- container -->
 
-	
-	<div id="r">
+	<div class="dg no-center" id="projects">
 		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-8 col-lg-offset-2">
-					<h4>SKILLS</h4>
-					<p></p>
-				</div>
-			</div><!-- row -->
-		</div><!-- container -->
-	</div><!-- r wrap -->
-	
+			<div class="centered"> 
+				<h4> Projects </h4>
+			</div>
+			<div class="row top-padding" id="broadcaster">
+				<section class="col-lg-8 col-lg-offset-2" >
+					<h4>Broadcaster</h4>
+					<a href="http://broadcaster.cu-dev.ca">Live Demo</a>
+					<img src="assets/img/broadcaster/homepage.png" width="400px">
+					<p>Broadcaster is a live video streaming/broadcasting app. It was wrote in TypeScript, but only the JavaScript code is currently maintained. Users can create a broadcast that other user are able to watch. </p>
+	        <p>
+	          Some of the features included in broadcaster are:
+	          <ul>
+	            <li>Create a broadcast from user's webcam</li>
+	            <li>Create a profile with broadcast name, description and a thumbnail</li>
+	            <li>List active broadcasts on the homepage</li>
+	            <li>Users can view profiles of active broadcasts</li>
+	            <li>Watch broadcasts</li>
+	          </ul>
+	        </p>
+				</section>
+			</div>
+			<div class="row top-padding" id="recipeRappele">
+				<section class="col-lg-8 col-lg-offset-2" >
+					<h4>Recipe Rappele</h4>
+					<a href="https://chrome.google.com/webstore/detail/recipe-rappele/beehilhanimicdpnhamfhlkgobngoede?hl=en">Recipe Rappele in Chrome Store</a>
+					<img src="assets/img/recipeRappele/allRecipes.png" width="400px">
+					<p>
+						Recipe Rappele is a Chrome app. It is an app which downloads recipes from the internet,stores them on your local computer, and allows users to retrieve and view them in a simple and clean view. It was built in a couple of weeks as a practice app to deploy to the Chrome web store. 
+					</p>
+				</section>
+			</div>
+
+			<div class="row top-padding" id="AAFactory">
+				<section class="col-lg-8 col-lg-offset-2" >
+					<h4>AA Factory</h4>
+					<img src="assets/img/AAFactory/ui.png" width="400px">
+					<p>
+						AA Factory is an interactive programming app that lets users program autonomous agents to complete tasks. AA Factory gives the user a goal to complete, and the user must write a script in JavaScript to complete the task. It was created by me and one other developer.
+					</p>
+				</section>
+			</div>
+
+		</div>
+	</div>
 	
 	<!-- FOOTER -->
 	<div id="f">
 		<div class="container">
 			<div class="row centered">
-				<a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-dribbble"></i></a>
+				<a href="http://github.com/chrisUsick"><i class="fa fa-github"></i></a><a href="mailto:christopher.usick@gmail.com"><i class="fa fa-envelope-o"></i>christopher.usick@gmail.com</a>
 		
 			</div><!-- row -->
 		</div><!-- container -->
