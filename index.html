@@ -25,7 +25,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="" data-target="">
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -39,7 +39,7 @@
           <a class="navbar-brand" href="#">cu-dev.ca</a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul role="tablist" class="nav nav-tabs navbar-nav navbar-right">
             <li><a href="#skills">SKILLS</a></li>
             <li><a href="#work">WORK</a></li>
             <li><a href="#about">ABOUT</a></li>
@@ -66,53 +66,72 @@
 	</div><!-- headerwrap -->
 
 	<!-- catch phrase or something -->
-	<div class="container w" id="skills">
-		<div class="row centered">
+	<div class="container w " id="skills">
+		<div class="row centered top-padding">
 			<h4>SKILLS</h4>
 			<br><br>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6 skill ">
 				<i class="fa fa-server"></i>
 				<h4>Server-side Web Dev</h4>
-				<p></p>
+				<div class="hover-hide">
+					<p> My main area of skills is <b>Node.js</b>. I also have experience with Ruby on Rails, Google Web Kits, and Vaadin</p>
+				</div>
 			</div><!-- col-lg-4 -->
 
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6 skill">
 				<i class="fa fa-html5"></i>
 				<h4>Client-side Web Dev</h4>
-				<p></p>
+				<div class="hover-hide">
+					<p>I have excellent experience in front-end development. Some frameworks and tools I've worked with include <b>AngularJS</b>, HTML5, CSS3, Polymer</p>
+				</div>
 			</div>
 
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6 skill">
 				<i class="fa fa-mobile"></i>
 				<h4>Cordova</h4>
-				<p></p>
+				<div class="hover-hide">
+					<p>I have some experience developing with Android cordova.</p>
+				</div>
 			</div><!-- col-lg-4 -->
 
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6 skill">
 				<i class="fa fa-database"></i>
 				<h4>Databases</h4>
-				<p></p>
+				<div class="hover-hide">
+					<p>I have ample experience different databases, including <b>MySQL</b>, PostreSQL, Oracle, MongoDB, and Neo4j.</p>
+				</div>
 			</div>
 
-		</div><!-- row -->
-
-		<div class="row centered"> 
-			<div class="col-lg-4">
+			<div class="col-lg-3 col-md-6 skill">
 				<i class="fa fa-code"></i>
 				<h4>.NET Framework</h4>
-				<p></p>
+				<div class="hover-hide"> 
+					<p><b>WinForms</b> is where I've had the most practice but with an understanding of the .NET framework and strong C# programming skills I would be able to take up Windows Phone or ASP.NET development.</p>
+				</div>
 			</div><!-- col-lg-4 -->
 
-			<div class="col-lg-4">
+			<div class="col-lg-3 col-md-6 skill">
 				<i class="fa fa-cloud-upload"></i>
 				<h4>AWS</h4>
-				<p></p>
+				<div class="hover-hide">
+					<p>I used <b>Amazon micro instances</b> to deploy many sites including this site, broadcaster (see <a href="#broadcaster">here</a>), and DataTemple. I have experience using NGINX server to create various proxies, allowing multiple web applications run on multiple servers.</p>
+				</div>
 			</div>
 
-			<div class="col-lg-4">
+			<div class="col-lg-3 col-md-6 skill">
 				<i class="fa fa-laptop"></i>
 				<h4>Linux Administration</h4>
-				<p></p>
+				<div class="hover-hide">
+					<p>I have many years of experience working with Linux environments, especially <b>Ubuntu</b> and <b>Debian</b>. I have used both OS's for PC uses and use Ubuntu Server 14 for cloud deployment.</p>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 skill">
+				<i class="">UP</i>
+				<h4>Unified Process</h4>
+				<div class="hover-hide">
+					<p>In my college education I received training in the Unified Process and the application of UP to software development on both a large and small scale. I am capable of both <b>designing</b> and <b>applying</b> UP modeling systems such as Activity, Class, and Use Case diagrams to software problems.</p>
+			</div>
 			</div>
 		</div>
 			
@@ -124,9 +143,9 @@
 
 
 	<!-- PORTFOLIO SECTION -->
-	<div class="dg" id="work">
+	<div class="dg " id="work">
 		<div class="container">
-			<div class="row centered">
+			<div class="top-padding row centered">
 				<h4>LATEST WORKS</h4>
 				<br>
 				<div class="col-lg-4">

@@ -332,6 +332,45 @@ section img {
 	margin-top: 0px; 
 }
 
+/* Skill hover items */
+.hover-hide {
+    /*width: 80%;*/
+    background-color: #ddd;
+    animation-name: scrollUp;
+    animation-duration:0.8s;
+    transform-origin: 50% 0%;
+    display: none;
+    padding: 0px 6px;
+    border-bottom-left-radius: 20px;
+}
+
+/* doesn't work, because of display:none; property */
+@keyframes scrollUp {
+    from {transform:scaleY(1.0);}
+    to {
+        transform:scaleY(0.0);
+    }
+}
+
+.skill:hover .hover-hide {
+    display: block;
+    position:absolute;
+    z-index: 100;
+    animation-name: scrollDown;
+    animation-duration:0.8s;
+    transform-origin: 50% 0%;
+}
+
+@keyframes scrollDown {
+    from {transform: scaleY(0.1);}
+    to {transform: scaleY(1.0);}
+}
+
+.hover-hide p {
+    line-height: normal;
+    text-align: left;
+}
+
 /* ==========================================================================
    Pricing Tables
    ========================================================================== */
