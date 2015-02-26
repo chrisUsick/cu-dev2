@@ -71,6 +71,8 @@
 			<h4>SKILLS</h4>
 			<br><br>
 			<div class="col-lg-3 col-md-6 skill ">
+
+				<div class="helper">Tap a skill to see more information</div>
 				<i class="fa fa-server"></i>
 				<h4>Server-side Web Dev</h4>
 				<div class="hover-hide">
@@ -149,6 +151,11 @@
 				<h4>LATEST WORKS</h4>
 				<br>
 				<div class="col-md-3">
+					<i class="fa fa-server"></i>
+					<h4><a href="#dataTemple">DataTemple</a></h4>
+					<p>A web application for viewing and managing astrological data on events, people, media and culture.</p>
+				</div>
+				<div class="col-md-3">
 					<i class="fa fa-mobile"></i>
 					<h4><a href="#unitPriceCalc">Unit Price Calculator </a></h4>
 					<p>An android app to calculate and compare multiple unit prices.</p>
@@ -165,11 +172,12 @@
 					<p>A chrome extension to extract recipe data from a recipe site, store it for offline usage, and display it in a uncluttered view.</p>
 				</div><!-- col-lg-4 -->
 
-				<div class="col-md-3">
+				<div class="col-md-3 col-centered">
 					<i class="fa fa-code"></i>
 					<h4><a href="#AAFactory">AA Factory</a></h4>
 					<p>An interactive coding app for creating and testing autonomous agents.</p>
 				</div><!-- col-lg-4 -->
+
 				
 			</div><!-- row -->
 		</div><!-- container -->
@@ -201,6 +209,26 @@
 		<div class="container">
 			<div class="centered"> 
 				<h4> Projects </h4>
+			</div>
+			<div class="row top-padding" id="dataTemple">
+				<section class="col-lg-8 col-lg-offset-2">
+					<h4>DataTemple</h4>
+					<a href="http:/54.67.72.124">
+						Visit DataTemple
+					</a>
+					<img src="assets/img/dataTemple/dataTemple.jpg" class="hoverScale" height="150px">
+					<img src="assets/img/dataTemple/amdEdit.png" class="hoverScale" height="150px">
+					<img src="assets/img/dataTemple/amdSearch.png" class="hoverScale" height="150px">
+					<p>
+						DataTemple is a web application I built for a client through ODesk.com. I applied for this job in December 2014 and was chosen for the job out of 50 other applicants. In this job I was responsible for all aspects of the development of the project, including negotiating terms, analyzing the client’s requirements and developing the website. The web app is an administrative application which allows users to create, edit and search the data. There is a user system with a permission system which allows the administrator users to restrict access of user to certain parts of the site. 
+					</p>
+					<p>
+						The main function of the site is the creation and management of astrological data kept for events, literature, media, people and other categories. The database incorporates over 30,000 records from an existing database. A user can view, edit, delete and create new data. This data is very complex and has a robust UI for editing it. There is also an advanced search functionality which allows the user to add many search criteria.
+					</p>
+					<p>
+						DataTemple was built with Node.js. It uses the <a href="http://loopback.io">Loopback</a> framework. The client is designed using AngularJS. This project gave me an advanced understanding of Loopback and added to my previous understanding of AngularJS. I also gained excellent experience in how to implement various server-side functionality in a Node.js web server, whether it be Express, Hapi, Loopback, or another web framework.
+					</p>
+				</section>
 			</div>
 			<div class="row top-padding" id="unitPriceCalc">
 				<section class="col-lg-8 col-lg-offset-2">
@@ -276,7 +304,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/bower_components/hammerjs/hammer.min.js"></script>
+    <script type="text/javascript" src="assets/bower_components/jquery-hammerjs/jquery.hammer.js"></script>
+
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
   </body>
 </html>

@@ -352,7 +352,11 @@ section img {
     }
 }
 
-.skill:hover .hover-hide {
+.skill {
+    margin-bottom: 30px;
+}
+
+.skill.tapped .hover-hide {
     display: block;
     position:absolute;
     z-index: 100;
@@ -371,6 +375,42 @@ section img {
     text-align: left;
 }
 
+.col-centered {
+    display: block;
+    margin: 0 auto;
+    float: none;
+}
+
+
+img.tapped {
+    position: relative;
+    animation-name: hoverScale;
+    animation-duration:0.5s;
+    z-index: 100;
+    transform-origin:100% 100%;
+    transform:scale(2);
+        
+}
+
+@keyframes hoverScale {
+    from {transform:scale(1);}
+    to {
+        transform:scale(2);
+    }
+}
+
+img {
+    position: inherit;
+    transform:scale(1);
+}
+
+.helper {
+    position: absolute;
+    width: 100px;
+    background-color: rgba(255,0,0,0.5);
+    /*left:-20px;*/
+    top:-20px;
+}
 /* ==========================================================================
    Pricing Tables
    ========================================================================== */
